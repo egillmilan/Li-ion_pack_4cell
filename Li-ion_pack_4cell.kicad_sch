@@ -2,8 +2,15 @@
 	(version 20250114)
 	(generator "eeschema")
 	(generator_version "9.0")
-	(uuid c00bfdeb-7993-43cc-94be-6a77b6ce2a80)
+	(uuid "c00bfdeb-7993-43cc-94be-6a77b6ce2a80")
 	(paper "A4")
+	(title_block
+		(title "Li-Ion pack 4 cell")
+		(date "2025-08-05")
+		(rev "1.0")
+		(company "Egill Milan Gunnarsson")
+		(comment 1 "Author")
+	)
 	(lib_symbols)
 	(sheet_instances
 		(path "/"
