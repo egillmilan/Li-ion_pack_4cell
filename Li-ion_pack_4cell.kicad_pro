@@ -430,7 +430,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
       "similar_label_and_power": "warning",
@@ -440,14 +440,23 @@
       "single_global_label": "ignore",
       "unannotated": "error",
       "unconnected_wire_endpoint": "warning",
+      "undefined_netclass": "error",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
       "wire_dangling": "error"
     }
   },
   "libraries": {
-    "pinned_footprint_libs": [],
-    "pinned_symbol_libs": []
+    "pinned_footprint_libs": [
+      "Batteries",
+      "Jumpers",
+      "Inductors"
+    ],
+    "pinned_symbol_libs": [
+      "Batteries",
+      "Jumpers",
+      "Inductors"
+    ]
   },
   "meta": {
     "filename": "Li-ion_pack_4cell.kicad_pro",
@@ -559,12 +568,24 @@
           "label": "Datasheet",
           "name": "Datasheet",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "Default Editing",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -612,6 +633,14 @@
     [
       "c00bfdeb-7993-43cc-94be-6a77b6ce2a80",
       "Root"
+    ],
+    [
+      "a03f90c6-fc4d-4b6e-aae1-77e3014a3f61",
+      "Battery Pack"
+    ],
+    [
+      "e632c1d9-5364-4d81-a4da-53497c20120f",
+      "Output Section"
     ]
   ],
   "text_variables": {}

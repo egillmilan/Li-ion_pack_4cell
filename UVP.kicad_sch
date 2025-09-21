@@ -1,0 +1,59 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "6fcce95b-f6cc-4bf2-aae7-52ee7fb15c5a")
+	(paper "A4")
+	(title_block
+		(title "Li-Ion pack 4 cell")
+		(date "2025-08-05")
+		(rev "1.0")
+		(company "Egill Milan Gunnarsson")
+		(comment 1 "Author")
+	)
+	(lib_symbols)
+	(hierarchical_label "~{UV}"
+		(shape output)
+		(at 50.8 81.28 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4a3dd04f-a99f-4e31-a299-e5f654a18466")
+	)
+	(hierarchical_label "BATTGND"
+		(shape input)
+		(at 50.8 88.9 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a6f97221-4eaa-4596-8891-eb73ca0de813")
+	)
+	(hierarchical_label "VBATT"
+		(shape input)
+		(at 50.8 53.34 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "dea149ec-b668-4736-81f4-df432c194d57")
+	)
+	(hierarchical_label "BATTMID"
+		(shape input)
+		(at 50.8 71.12 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f7a1fd1d-229a-4954-89a1-1419e62c0533")
+	)
+)

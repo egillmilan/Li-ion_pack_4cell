@@ -1,0 +1,363 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "73634bc4-56e6-4d2b-8e1f-dc66c557ae5f")
+	(paper "A4")
+	(title_block
+		(title "Li-Ion pack 4 cell")
+		(date "2025-09-17")
+		(rev "1.0")
+		(company "Egill Milan Gunnarsson")
+		(comment 1 "Author")
+	)
+	(lib_symbols
+		(symbol "Integrated_Circuits:U-USBC_controller-TUSB319_Q1-8WFDFN_EP-SMD"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -12.7 13.97 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "TUSB319-Q1"
+				(at 12.7 13.97 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Footprint" "Integrated_Circuits:WSON-8-1EP_2x2mm_P0.5mm_EP0.5x1.8mm_ThermalVia"
+				(at 0 -25.4 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tusb319-q1.pdf"
+				(at 0 -27.94 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "USB, Type-C Controller PMIC 8-WSON (2x2)"
+				(at 0 -22.86 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer part number" "TUSB319IDRFRQ1"
+				(at 0 -20.32 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "U-USBC_controller-TUSB319_Q1-8WFDFN_EP-SMD_0_1"
+				(rectangle
+					(start -12.7 12.7)
+					(end 12.7 -12.7)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "U-USBC_controller-TUSB319_Q1-8WFDFN_EP-SMD_1_0"
+				(pin output line
+					(at -15.24 0 0)
+					(length 2.54)
+					(name "ID"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -15.24 -10.16 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "U-USBC_controller-TUSB319_Q1-8WFDFN_EP-SMD_1_1"
+				(pin power_in line
+					(at -15.24 10.16 0)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -15.24 5.08 0)
+					(length 2.54)
+					(name "DIR"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -15.24 -5.08 0)
+					(length 2.54)
+					(name "CURRENT_MODE"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 0 -15.24 90)
+					(length 2.54)
+					(name "PAD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 15.24 10.16 180)
+					(length 2.54)
+					(name "VBUS_DET"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 0 180)
+					(length 2.54)
+					(name "CC1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 15.24 -7.62 180)
+					(length 2.54)
+					(name "CC2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(symbol
+		(lib_id "Integrated_Circuits:U-USBC_controller-TUSB319_Q1-8WFDFN_EP-SMD")
+		(at 144.78 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "347095af-8649-4f13-ab9e-87394e8e6e1b")
+		(property "Reference" "U2"
+			(at 132.08 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TUSB319-Q1"
+			(at 157.48 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Integrated_Circuits:WSON-8-1EP_2x2mm_P0.5mm_EP0.5x1.8mm_ThermalVia"
+			(at 144.78 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tusb319-q1.pdf"
+			(at 144.78 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "USB, Type-C Controller PMIC 8-WSON (2x2)"
+			(at 144.78 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer part number" "TUSB319IDRFRQ1"
+			(at 144.78 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "7"
+			(uuid "22daea96-00d5-4c6b-89c5-70ebda9c238d")
+		)
+		(pin "4"
+			(uuid "80d1b48f-3e39-4cca-ab6d-307ff59b69c4")
+		)
+		(pin "2"
+			(uuid "55931d39-e3f5-4317-8d39-a20c027cf8bc")
+		)
+		(pin "9"
+			(uuid "3db31a99-5427-4c58-af20-e6c004a7ddbd")
+		)
+		(pin "3"
+			(uuid "1912cb12-4bdd-4506-8d87-a856399fc3ea")
+		)
+		(pin "8"
+			(uuid "8b167971-1924-4962-8f5f-24b50257cb8a")
+		)
+		(pin "1"
+			(uuid "d9863580-8e12-4b9b-9bbd-0b60c21864fb")
+		)
+		(pin "5"
+			(uuid "39674354-8c1c-451e-b316-cad9cc7cde15")
+		)
+		(pin "6"
+			(uuid "1704b2fe-20be-4255-b0c5-7f46a8d57266")
+		)
+		(instances
+			(project "Li-ion_pack_4cell"
+				(path "/c00bfdeb-7993-43cc-94be-6a77b6ce2a80/e632c1d9-5364-4d81-a4da-53497c20120f"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+)
