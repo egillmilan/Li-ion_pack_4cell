@@ -450,12 +450,28 @@
     "pinned_footprint_libs": [
       "Batteries",
       "Jumpers",
-      "Inductors"
+      "Inductors",
+      "Connectors",
+      "Capacitors",
+      "Diodes",
+      "Fuses",
+      "Integrated_Circuits",
+      "Mech",
+      "Resistors",
+      "Switches"
     ],
     "pinned_symbol_libs": [
       "Batteries",
       "Jumpers",
-      "Inductors"
+      "Inductors",
+      "Switches",
+      "Capacitors",
+      "Connectors",
+      "Fuses",
+      "Resistors",
+      "Diodes",
+      "Integrated_Circuits",
+      "Mech"
     ]
   },
   "meta": {
@@ -635,12 +651,12 @@
       "Root"
     ],
     [
-      "a03f90c6-fc4d-4b6e-aae1-77e3014a3f61",
-      "Battery Pack"
-    ],
-    [
       "e632c1d9-5364-4d81-a4da-53497c20120f",
       "Output Section"
+    ],
+    [
+      "a03f90c6-fc4d-4b6e-aae1-77e3014a3f61",
+      "Battery Pack"
     ]
   ],
   "text_variables": {}

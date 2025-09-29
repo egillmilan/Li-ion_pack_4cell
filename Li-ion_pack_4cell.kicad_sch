@@ -2047,6 +2047,200 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Integrated_Circuits:U-LDO_regulator-ADP3331-SOT-23-6-SMD"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -7.62 13.97 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "ADP3331"
+				(at 12.7 13.97 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Footprint" "Integrated_Circuits:SOT-23-6"
+				(at 0 -25.4 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tusb319-q1.pdf"
+				(at 0 -27.94 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Linear Voltage Regulator IC Positive Adjustable 1 Output 200mA SOT-23-6"
+				(at 0 -22.86 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer part number" "ADP3331ARTZ-REEL7"
+				(at 0 -20.32 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "U-LDO_regulator-ADP3331-SOT-23-6-SMD_0_1"
+				(rectangle
+					(start -7.62 12.7)
+					(end 12.7 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "U-LDO_regulator-ADP3331-SOT-23-6-SMD_1_0"
+				(pin passive line
+					(at -2.54 -10.16 90)
+					(length 2.54)
+					(name "~{SD}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 15.24 -5.08 180)
+					(length 2.54)
+					(name "FB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "U-LDO_regulator-ADP3331-SOT-23-6-SMD_1_1"
+				(pin power_in line
+					(at -10.16 2.54 0)
+					(length 2.54)
+					(name "IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 5.08 -10.16 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 15.24 10.16 180)
+					(length 2.54)
+					(name "~{ERR}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 15.24 2.54 180)
+					(length 2.54)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Jumpers:JP-2_Bridged-RoundedPad1.0x1.5mm-Solder"
 			(pin_numbers
 				(hide yes)
@@ -4480,7 +4674,7 @@
 	)
 	(text_box "TODO:\nAdd output section (buck converter and USB receptacle)"
 		(exclude_from_sim no)
-		(at 215.9 60.96 0)
+		(at 215.9 27.94 0)
 		(size 20.32 10.16)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -4610,6 +4804,28 @@
 		)
 		(uuid "39a3708a-36a4-4305-afa5-1a08157c170c")
 	)
+	(text_box "TODO:\nAdd some sort of pass-through functionality when 5 V charger is connected to J1"
+		(exclude_from_sim no)
+		(at 104.14 17.78 0)
+		(size 22.86 12.7)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0.05)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(fill
+			(type color)
+			(color 255 60 2 1)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "3c394be8-8507-42f4-9acd-2dd65a27ecc3")
+	)
 	(text_box "TODO:\nAdd Fuses for protection"
 		(exclude_from_sim no)
 		(at 243.84 91.44 0)
@@ -4634,7 +4850,7 @@
 	)
 	(text_box "Design note:\nSYS is the system output, meaning that when charging and V_{BATT} < V_{BATT_PRE}, the V_{SYS} is regulated to V_{BATT_PRE} + V_{TRACK} where V_{TRACK} ~ 0.3 V and V_{BATT_PRE} = 6.4 V\nWhen charging and V_{BATT} > V_{BATT_PRE}, then V_{SYS} = V_{BATT} + I_{BATT}R_{DS_ON_Q3}.\nWhen charging terminates, V_{SYS} is regulated to V_{BATT} + V_{TRACK}"
 		(exclude_from_sim no)
-		(at 154.94 43.18 0)
+		(at 152.4 43.18 0)
 		(size 30.48 22.86)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -4653,6 +4869,28 @@
 			(justify left top)
 		)
 		(uuid "a0aed2f6-98b9-4ec1-8afd-f413766ca9e8")
+	)
+	(text_box "TODO:\nAdd 5V LDO for USB controller and UVP circuit"
+		(exclude_from_sim no)
+		(at 208.28 83.82 0)
+		(size 20.32 10.16)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0.05)
+			(type solid)
+			(color 0 0 0 1)
+		)
+		(fill
+			(type color)
+			(color 255 60 2 1)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "a9f3e819-f932-493d-b21e-7f1882892631")
 	)
 	(text_box "TODO:\nAdd UVP circuit"
 		(exclude_from_sim no)
@@ -4766,7 +5004,7 @@
 	)
 	(text_box "Design note:\nMinimum inductance was calculated to be 300 nH, but to follow the datasheet examples, a 1.5 µH inductor was chosen."
 		(exclude_from_sim no)
-		(at 127 66.04 0)
+		(at 124.46 68.58 0)
 		(size 22.86 15.24)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -4829,6 +5067,12 @@
 		(uuid "1b046bd0-101a-46ea-bcc2-9aaf3a5ecf3c")
 	)
 	(junction
+		(at 198.12 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "29a2bb45-bf1f-466a-88e1-f11c3751f902")
+	)
+	(junction
 		(at 96.52 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4863,6 +5107,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "60e5b573-d2ac-4a96-8dc1-ce7ea83201f1")
+	)
+	(junction
+		(at 187.96 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "794e6dd9-677e-462b-9763-ebdef82499d9")
 	)
 	(junction
 		(at 43.18 35.56)
@@ -4935,12 +5185,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d67cb039-27c1-4e8e-84c3-b53c4d943c9e")
-	)
-	(junction
-		(at 190.5 83.82)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "de2cee1b-cfdd-4d60-adf7-a6cfbb6720d0")
 	)
 	(junction
 		(at 185.42 93.98)
@@ -5051,6 +5295,16 @@
 			(type default)
 		)
 		(uuid "09e121fb-0b2e-42bc-bf15-07b65e5c739c")
+	)
+	(wire
+		(pts
+			(xy 198.12 58.42) (xy 205.74 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13bb8e95-bc43-4887-8f71-3acb87f557b0")
 	)
 	(wire
 		(pts
@@ -5794,16 +6048,6 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 83.82) (xy 198.12 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "82bdd4be-b28b-4d6e-8d66-bb6c132f6713")
-	)
-	(wire
-		(pts
 			(xy 40.64 48.26) (xy 53.34 48.26)
 		)
 		(stroke
@@ -5935,7 +6179,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 81.28) (xy 190.5 83.82)
+			(xy 187.96 81.28) (xy 187.96 83.82)
 		)
 		(stroke
 			(width 0)
@@ -6179,6 +6423,16 @@
 	)
 	(wire
 		(pts
+			(xy 198.12 83.82) (xy 198.12 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7047624-d29d-40e6-9bee-86948a59ec54")
+	)
+	(wire
+		(pts
 			(xy 172.72 93.98) (xy 185.42 93.98)
 		)
 		(stroke
@@ -6329,7 +6583,7 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 83.82) (xy 190.5 83.82)
+			(xy 185.42 83.82) (xy 187.96 83.82)
 		)
 		(stroke
 			(width 0)
@@ -6419,6 +6673,16 @@
 	)
 	(wire
 		(pts
+			(xy 220.98 71.12) (xy 220.98 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1dade3b-cb47-4f98-9ef5-f17c9670fe2e")
+	)
+	(wire
+		(pts
 			(xy 88.9 132.08) (xy 88.9 134.62)
 		)
 		(stroke
@@ -6469,6 +6733,16 @@
 	)
 	(wire
 		(pts
+			(xy 187.96 83.82) (xy 198.12 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8d2945f-26ac-46e9-849a-cad58bcab8ec")
+	)
+	(wire
+		(pts
 			(xy 162.56 93.98) (xy 165.1 93.98)
 		)
 		(stroke
@@ -6498,7 +6772,7 @@
 		(uuid "fb8fe590-7722-400e-9e7d-645b62d8448c")
 	)
 	(image
-		(at 170.18 73.66)
+		(at 167.64 73.66)
 		(scale 0.168112)
 		(uuid "457f7528-57ee-46eb-96bf-11dd9c0a9d7d")
 		(data "iVBORw0KGgoAAAANSUhEUgAAA1sAAAGVCAIAAACHI3y/AAAAA3NCSVQICAjb4U/gAAAACXBIWXMA"
@@ -11803,6 +12077,95 @@
 		)
 	)
 	(symbol
+		(lib_id "Integrated_Circuits:U-LDO_regulator-ADP3331-SOT-23-6-SMD")
+		(at 215.9 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "123fb03b-8865-4b94-836e-80e2744f8bd6")
+		(property "Reference" "U3"
+			(at 218.44 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ADP3331"
+			(at 218.44 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Integrated_Circuits:SOT-23-6"
+			(at 215.9 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tusb319-q1.pdf"
+			(at 215.9 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Linear Voltage Regulator IC Positive Adjustable 1 Output 200mA SOT-23-6"
+			(at 215.9 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer part number" "ADP3331ARTZ-REEL7"
+			(at 215.9 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "9c979750-9a18-4ce2-8cf9-f02343497293")
+		)
+		(pin "6"
+			(uuid "197fdeca-517e-4e22-a1c6-3cea7cbd4fb6")
+		)
+		(pin "5"
+			(uuid "7081cca9-048b-4104-b8a1-ddda0a79f864")
+		)
+		(pin "2"
+			(uuid "561619f9-8caa-42a3-9101-e5b9890d30cf")
+		)
+		(pin "1"
+			(uuid "b48c5be7-0fec-4f16-9b25-616cf7a993b1")
+		)
+		(pin "3"
+			(uuid "259fdc5a-4c17-4d11-b7f8-0c0caf5cc522")
+		)
+		(instances
+			(project ""
+				(path "/c00bfdeb-7993-43cc-94be-6a77b6ce2a80"
+					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 195.58 114.3 0)
 		(unit 1)
@@ -12670,6 +13033,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 220.98 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4104b926-06e9-4214-be17-fb10e75ea403")
+		(property "Reference" "#PWR017"
+			(at 220.98 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 220.98 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 220.98 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 220.98 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 220.98 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c16ef317-6b36-4129-b93f-bdd7fc33f8b6")
+		)
+		(instances
+			(project "Li-ion_pack_4cell"
+				(path "/c00bfdeb-7993-43cc-94be-6a77b6ce2a80"
+					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Jumpers:JP-2_Bridged-RoundedPad1.0x1.5mm-Solder")
 		(at 203.2 139.7 0)
 		(unit 1)
@@ -12871,7 +13300,7 @@
 	)
 	(symbol
 		(lib_id "Mech:TP-1.0mm-THM")
-		(at 190.5 81.28 0)
+		(at 187.96 81.28 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12879,7 +13308,7 @@
 		(dnp no)
 		(uuid "4f2775f2-f41f-4a8d-ba77-3b55a8fe939d")
 		(property "Reference" "TP14"
-			(at 193.04 76.708 0)
+			(at 190.5 76.708 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12888,7 +13317,7 @@
 			)
 		)
 		(property "Value" "VSYS"
-			(at 193.04 79.248 0)
+			(at 190.5 79.248 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12897,7 +13326,7 @@
 			)
 		)
 		(property "Footprint" "Mech:TP-1.0mm-THM"
-			(at 190.5 86.36 0)
+			(at 187.96 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12906,7 +13335,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 190.5 88.9 0)
+			(at 187.96 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12915,7 +13344,7 @@
 			)
 		)
 		(property "Description" "wire loop with bead as test point, loop diameter 1.8mm, hole diameter 1.0mm"
-			(at 190.5 91.44 0)
+			(at 187.96 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15789,7 +16218,7 @@
 		(instances
 			(project "Li-ion_pack_4cell"
 				(path "/c00bfdeb-7993-43cc-94be-6a77b6ce2a80"
-					(page "2")
+					(page "3")
 				)
 			)
 		)
@@ -15828,10 +16257,20 @@
 				(justify left top)
 			)
 		)
+		(pin "VDD" input
+			(at 246.38 50.8 180)
+			(uuid "66c67a23-2db1-4546-8db0-ba914eb70cda")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "Li-ion_pack_4cell"
 				(path "/c00bfdeb-7993-43cc-94be-6a77b6ce2a80"
-					(page "3")
+					(page "2")
 				)
 			)
 		)
